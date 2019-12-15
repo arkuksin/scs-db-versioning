@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: user-service
+  cloud:
+    kubernetes:
+      config:
+        name: user-configmap
+        enabled: true
+        enable-api: true
+      secrets:
+        name: user-secret
+        enable-api: true
+        enabled: true
