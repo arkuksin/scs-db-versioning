@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: user-application
+  name: post-application
   namespace: migration
   labels:
-    app: user-application
+    app: post-application
 spec:
   selector:
     matchLabels:
-      app: user-application
+      app: post-application
   template:
     metadata:
       labels:
-        app: user-application
+        app: post-application
     spec:
       containers:
-        - name: user-application
-          image: 192.168.0.150:5000/userapp:latest #my-private-registry/userapp:latest
+        - name: post-application
+          image: my-private-registry/postapp:latest
           ports:
             - containerPort: 8080

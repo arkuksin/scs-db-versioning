@@ -18,15 +18,15 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @AutoConfigureMockMvc
 @ActiveProfiles("test")
 @SpringBootTest
-class UserInfoResourceTest {
+class PostResourceTest {
 
     @Autowired
     private MockMvc mvc;
 
     @Test
     void getUserByIdShouldReturnOk() throws Exception {
-        mvc.perform(get("/users/cbe4d04f-28ff-4e4f-8c6a-83345f77b24d"))
+        mvc.perform(get("/posts/cbe4d04f-28ff-4e4f-8c6a-83345f77b24d"))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$.name", is("Max")));
+                .andExpect(jsonPath("$.name", is("SCS")));
     }
 }

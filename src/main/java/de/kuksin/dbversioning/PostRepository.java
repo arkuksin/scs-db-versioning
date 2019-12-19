@@ -5,6 +5,6 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
 import java.util.UUID;
 
-@RepositoryRestResource(path = "users", collectionResourceRel = "users")
-public interface UserInfoRepository extends PagingAndSortingRepository<UserInfo, UUID> {
+@RepositoryRestResource(path = "posts", collectionResourceRel = "posts")
+public interface PostRepository extends PagingAndSortingRepository<Post, UUID> {
 }

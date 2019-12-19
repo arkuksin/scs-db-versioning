@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: user-configmap
+  name: post-configmap
   namespace: migration
 data:
-  spring.datasource.username: user_service
+  spring.datasource.username: post_service
   spring.datasource.driver-class-name: org.postgresql.Driver
-  spring.datasource.url: jdbc:postgresql://postgres:5432/user_service
+  spring.datasource.url: jdbc:postgresql://postgres:5432/post_service

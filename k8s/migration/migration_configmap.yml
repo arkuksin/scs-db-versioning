@@ -19,5 +19,5 @@ data:
       OWNER = ${username}
       ENCODING  = 'UTF8'
       CONNECTION LIMIT = -1;
-  V1_3__grant_provelegts.sql: |
+  V1_3__grant_privileges.sql: |
     GRANT ALL ON DATABASE ${username} TO ${username}

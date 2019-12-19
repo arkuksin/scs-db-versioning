@@ -29,12 +29,12 @@ spec:
             - name: FLYWAY_PLACEHOLDERS_USERNAME
               valueFrom:
                 configMapKeyRef:
-                  name: user-configmap
+                  name: post-configmap
                   key: spring.datasource.username
             - name: FLYWAY_PLACEHOLDERS_PASSWORD
               valueFrom:
                 secretKeyRef:
-                  name: user-secret
+                  name: post-secret
                   key: spring.datasource.password
           volumeMounts:
             - mountPath: /flyway/sql

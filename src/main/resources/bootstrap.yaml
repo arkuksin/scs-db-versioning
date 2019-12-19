@@ -1,13 +1,13 @@
 spring:
   application:
-    name: user-service
+    name: post-service
   cloud:
     kubernetes:
       config:
-        name: user-configmap
-        enabled: true
+        name: post-configmap
         enable-api: true
+        enabled: true
       secrets:
-        name: user-secret
+        name: post-secret
         enable-api: true
         enabled: true
